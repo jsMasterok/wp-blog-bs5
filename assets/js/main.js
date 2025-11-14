@@ -273,13 +273,17 @@
 
     //VSticker
     var VSticker = function() {
-        $('#datetime').vTicker({
-            speed: 1000,
-            pause: 3000,
-            animation: 'fade',
-            mousePause: false,
-            showItems: 1
-        });
+        var $ticker = $('#datetime');
+
+        if ($ticker.length && $.fn.vTicker) {
+            $ticker.vTicker({
+                speed: 1000,
+                pause: 3000,
+                animation: 'fade',
+                mousePause: false,
+                showItems: 1
+            });
+        }
     };
 
     //sidebar sticky
@@ -289,8 +293,11 @@
 
     //Custom scrollbar
     var customScrollbar = function() {
-        var $ = document.querySelector.bind(document);
-        var ps = new PerfectScrollbar('.custom-scrollbar');
+        var target = document.querySelector('.custom-scrollbar');
+
+        if (target) {
+            new PerfectScrollbar(target);
+        }
     };
 
     //Mega menu
