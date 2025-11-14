@@ -136,5 +136,4 @@ if (!defined('ABSPATH')) {
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <?php wp_footer(); ?>
 </body>
-
 </html>
