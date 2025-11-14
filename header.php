@@ -12,13 +12,12 @@ if (!defined('ABSPATH')) {
     <?php
     $manifest_path = get_template_directory() . '/site.webmanifest';
     if (file_exists($manifest_path)) :
-    ?>
-    <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri() . '/site.webmanifest'); ?>">
+        ?>
+        <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri() . '/site.webmanifest'); ?>">
     <?php
     endif;
     ?>
-    <link rel="shortcut icon" type="image/x-icon"
-        href="<?php echo esc_url(get_template_directory_uri() . '/assets/imgs/favicon.svg'); ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/imgs/favicon.svg'); ?>">
     <?php wp_head(); ?>
 </head>
 

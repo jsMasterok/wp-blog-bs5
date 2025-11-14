@@ -11,21 +11,7 @@
 /*Import google fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto&display=swap'); */
 
-/* Import third party CSS library */
-@import url(/wp-content/themes/d24ar/assets/css/vendor/bootstrap.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/owl.carousel.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/ticker-style.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/material-icons.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/weather-icons.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/flaticon.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/slicknav.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/animate.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/magnific-popup.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/fontawesome-all.min.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/themify-icons.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/slick.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/nice-select.css);
-@import url(/wp-content/themes/d24ar/assets/css/vendor/perfect-scrollbar.css);
+/* Third-party CSS is enqueued via functions.php. */
 
 /* GENERAL */
 body {
