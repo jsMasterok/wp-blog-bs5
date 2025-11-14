@@ -11,7 +11,21 @@
 /*Import google fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto&display=swap'); */
 
-/* Third-party CSS is enqueued via functions.php. */
+/* Import third party CSS library */
+@import url(vendor/bootstrap.min.css);
+@import url(vendor/owl.carousel.min.css);
+@import url(vendor/ticker-style.css);
+@import url(vendor/material-icons.min.css);
+@import url(vendor/weather-icons.min.css);
+@import url(vendor/flaticon.css);
+@import url(vendor/slicknav.css);
+@import url(vendor/animate.min.css);
+@import url(vendor/magnific-popup.css);
+@import url(vendor/fontawesome-all.min.css);
+@import url(vendor/themify-icons.css);
+@import url(vendor/slick.css);
+@import url(vendor/nice-select.css);
+@import url(vendor/perfect-scrollbar.css);
 
 /* GENERAL */
 body {

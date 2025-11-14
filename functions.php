@@ -41,13 +41,6 @@ if (! function_exists('wp_blog_bs5_assets')) {
         $script_base = $theme_uri . '/assets/js/';
 
         wp_enqueue_style(
-            'wp-blog-bs5-google-fonts',
-            'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap',
-            [],
-            null
-        );
-
-        wp_enqueue_style(
             'wp-blog-bs5-bootstrap',
             $style_base . 'vendor/bootstrap.min.css',
             [],
@@ -61,7 +54,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-flaticon'         => 'vendor/fonts/flaticon.css',
             'wp-blog-bs5-material-icons'   => 'vendor/material-icons.min.css',
             'wp-blog-bs5-weather-icons'    => 'vendor/weather-icons.min.css',
-            'wp-blog-bs5-perfect-scrollbar'=> 'vendor/perfect-scrollbar.css',
+            'wp-blog-bs5-perfect-scrollbar' => 'vendor/perfect-scrollbar.css',
             'wp-blog-bs5-owl-carousel'     => 'vendor/owl.carousel.min.css',
             'wp-blog-bs5-slick'            => 'vendor/slick.css',
             'wp-blog-bs5-slicknav'         => 'vendor/slicknav.css',
@@ -73,13 +66,6 @@ if (! function_exists('wp_blog_bs5_assets')) {
         foreach ($vendor_styles as $handle => $file) {
             wp_enqueue_style($handle, $style_base . $file, ['wp-blog-bs5-bootstrap'], $theme_version);
         }
-
-        wp_enqueue_style(
-            'wp-blog-bs5-ionicons',
-            'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
-            ['wp-blog-bs5-bootstrap'],
-            '4.5.10-0'
-        );
 
         $additional_styles = [
             'wp-blog-bs5-main'       => 'main.css',
