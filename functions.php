@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Theme bootstrap file.
  */
@@ -54,7 +55,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-flaticon'         => 'vendor/fonts/flaticon.css',
             'wp-blog-bs5-material-icons'   => 'vendor/material-icons.min.css',
             'wp-blog-bs5-weather-icons'    => 'vendor/weather-icons.min.css',
-            'wp-blog-bs5-perfect-scrollbar'=> 'vendor/perfect-scrollbar.css',
+            'wp-blog-bs5-perfect-scrollbar' => 'vendor/perfect-scrollbar.css',
             'wp-blog-bs5-owl-carousel'     => 'vendor/owl.carousel.min.css',
             'wp-blog-bs5-slick'            => 'vendor/slick.css',
             'wp-blog-bs5-slicknav'         => 'vendor/slicknav.css',
