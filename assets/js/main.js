@@ -289,8 +289,11 @@
 
     //Custom scrollbar
     var customScrollbar = function() {
-        var $ = document.querySelector.bind(document);
-        var ps = new PerfectScrollbar('.custom-scrollbar');
+        var target = document.querySelector('.custom-scrollbar');
+
+        if (target) {
+            new PerfectScrollbar(target);
+        }
     };
 
     //Mega menu
