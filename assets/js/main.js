@@ -325,7 +325,7 @@
     var customScrollbar = function() {
         var target = document.querySelector('.custom-scrollbar');
 
-        if (target && typeof window.PerfectScrollbar === 'function') {
+        if (target) {
             new PerfectScrollbar(target);
         }
     };

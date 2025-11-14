@@ -58,7 +58,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
 
         wp_enqueue_style(
             'wp-blog-bs5-google-fonts',
-            'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap&subset=latin,latin-ext,cyrillic,cyrillic-ext',
+            'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap',
             [],
             null
         );
@@ -86,7 +86,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-weather-icons'    => [
                 'path' => 'assets/css/vendor/weather-icons.min.css',
             ],
-            'wp-blog-bs5-perfect-scrollbar'=> [
+            'wp-blog-bs5-perfect-scrollbar' => [
                 'path' => 'assets/css/vendor/perfect-scrollbar.css',
             ],
             'wp-blog-bs5-owl-carousel'     => [
@@ -107,11 +107,11 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-ticker-style'     => [
                 'path' => 'assets/css/vendor/ticker-style.css',
             ],
-            'wp-blog-bs5-ionicons'         => [
-                'src'  => 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
-                'ver'  => '4.5.10-0',
-                'deps' => [],
-            ],
+            // 'wp-blog-bs5-ionicons'         => [
+            //     'src'  => 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
+            //     'ver'  => '4.5.10-0',
+            //     'deps' => [],
+            // ],
         ];
 
         foreach ($styles as $handle => $data) {
@@ -132,7 +132,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
         $style_dependencies = array_unique(array_merge(['wp-blog-bs5-google-fonts'], array_keys($styles)));
 
         $additional_styles = [
-            'wp-blog-bs5-main'       => 'assets/css/main.css',
+            // 'wp-blog-bs5-main'       => 'assets/css/main.css',
             'wp-blog-bs5-color'      => 'assets/css/color.css',
             'wp-blog-bs5-responsive' => 'assets/css/responsive.css',
             'wp-blog-bs5-widgets'    => 'assets/css/widgets.css',
@@ -233,12 +233,10 @@ if (! function_exists('wp_blog_bs5_assets')) {
             wp_enqueue_script($handle, $src, $data['deps'], $version, true);
         }
 
-        $script_dependencies = array_unique(array_merge(['jquery'], array_keys($scripts)));
-
         wp_enqueue_script(
             'wp-blog-bs5-main',
             get_theme_file_uri('assets/js/main.js'),
-            $script_dependencies,
+            ['jquery', 'wp-blog-bs5-bootstrap'],
             wp_blog_bs5_asset_version('assets/js/main.js', $theme_version),
             true
         );
