@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Theme bootstrap file.
  */
@@ -86,7 +87,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-weather-icons'    => [
                 'path' => 'assets/css/vendor/weather-icons.min.css',
             ],
-            'wp-blog-bs5-perfect-scrollbar'=> [
+            'wp-blog-bs5-perfect-scrollbar' => [
                 'path' => 'assets/css/vendor/perfect-scrollbar.css',
             ],
             'wp-blog-bs5-owl-carousel'     => [
@@ -107,11 +108,11 @@ if (! function_exists('wp_blog_bs5_assets')) {
             'wp-blog-bs5-ticker-style'     => [
                 'path' => 'assets/css/vendor/ticker-style.css',
             ],
-            'wp-blog-bs5-ionicons'         => [
-                'src'  => 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
-                'ver'  => '4.5.10-0',
-                'deps' => [],
-            ],
+            // 'wp-blog-bs5-ionicons'         => [
+            //     'src'  => 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
+            //     'ver'  => '4.5.10-0',
+            //     'deps' => [],
+            // ],
         ];
 
         foreach ($styles as $handle => $data) {
@@ -132,7 +133,7 @@ if (! function_exists('wp_blog_bs5_assets')) {
         $style_dependencies = array_unique(array_merge(['wp-blog-bs5-google-fonts'], array_keys($styles)));
 
         $additional_styles = [
-            'wp-blog-bs5-main'       => 'assets/css/main.css',
+            // 'wp-blog-bs5-main'       => 'assets/css/main.css',
             'wp-blog-bs5-color'      => 'assets/css/color.css',
             'wp-blog-bs5-responsive' => 'assets/css/responsive.css',
             'wp-blog-bs5-widgets'    => 'assets/css/widgets.css',

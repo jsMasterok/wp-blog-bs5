@@ -4,20 +4,24 @@ if (!defined('ABSPATH')) {
 }
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html class="no-js" <?php language_attributes(); ?>>
+
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <?php
     $manifest_path = get_template_directory() . '/site.webmanifest';
     if (file_exists($manifest_path)) :
-        ?>
-        <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri() . '/site.webmanifest'); ?>">
+    ?>
+    <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri() . '/site.webmanifest'); ?>">
     <?php
     endif;
     ?>
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/imgs/favicon.svg'); ?>">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="<?php echo esc_url(get_template_directory_uri() . '/assets/imgs/favicon.svg'); ?>">
     <?php wp_head(); ?>
 </head>
 
@@ -234,7 +238,7 @@ if (!defined('ABSPATH')) {
                                     <ul class="main-menu d-none d-lg-inline">
                                         <li class="menu-item-has-children">
                                             <a href=""><span class="mr-15">
-                                                    <icon-icon name="home-outline"></icon-icon>
+                                                    <ion-icon name="home-outline"></ion-icon>
                                                 </span>Home</a>
                                             <ul class="sub-menu text-muted font-small">
                                                 <li><a href="">Home default</a></li>
@@ -245,7 +249,7 @@ if (!defined('ABSPATH')) {
                                         <li class="mega-menu-item">
                                             <a href="#">
                                                 <span class="mr-15">
-                                                    <icon-icon name="desktop-outline"></icon-icon>
+                                                    <ion-icon name="desktop-outline"></ion-icon>
                                                 </span>Layouts
                                             </a>
                                             <div class="sub-mega-menu sub-menu-list row text-muted font-small">
@@ -283,7 +287,7 @@ if (!defined('ABSPATH')) {
                                         </li>
                                         <li class="mega-menu-item">
                                             <a href=""><span class="mr-15">
-                                                    <icon-icon name="megaphone-outline"></icon-icon>
+                                                    <ion-icon name="megaphone-outline"></ion-icon>
                                                 </span>Mega</a>
                                             <div class="sub-mega-menu">
                                                 <div class="nav flex-column nav-pills" role="tablist">
@@ -636,24 +640,24 @@ if (!defined('ABSPATH')) {
                                             </div>
                                         </li>
                                         <li><a href=""><span class="mr-15">
-                                                    <icon-icon name="film-outline"></icon-icon>
+                                                    <ion-icon name="film-outline"></ion-icon>
                                                 </span>Video</a></li>
                                         <li><a href=""><span class="mr-15">
-                                                    <icon-icon name="mail-unread-outline"></icon-icon>
+                                                    <ion-icon name="mail-unread-outline"></ion-icon>
                                                 </span>Contact</a></li>
                                     </ul>
                                     <div class="d-inline ml-50 tools-icon">
                                         <a class="red-tooltip text-danger" href="#" data-toggle="tooltip"
                                             data-placement="top" title="" data-original-title="Hot Topics">
-                                            <icon-icon name="flame-outline"></icon-icon>
+                                            <ion-icon name="flame-outline"></ion-icon>
                                         </a>
                                         <a class="red-tooltip text-primary" href="#" data-toggle="tooltip"
                                             data-placement="top" title="" data-original-title="Trending">
-                                            <icon-icon name="flash-outline"></icon-icon>
+                                            <ion-icon name="flash-outline"></ion-icon>
                                         </a>
                                         <a class="red-tooltip text-success" href="#" data-toggle="tooltip"
                                             data-placement="top" title="" data-original-title="Notifications">
-                                            <icon-icon name="notifications-outline"></icon-icon>
+                                            <ion-icon name="notifications-outline"></ion-icon>
                                             <span class="notification bg-success">5</span>
                                         </a>
                                     </div>
@@ -668,7 +672,7 @@ if (!defined('ABSPATH')) {
                             <!-- Off canvas -->
                             <div class="off-canvas-toggle-cover">
                                 <div class="off-canvas-toggle hidden d-inline-block ml-15" id="off-canvas-toggle">
-                                    <icon-icon name="grid-outline"></icon-icon>
+                                    <ion-icon name="grid-outline"></ion-icon>
                                 </div>
                             </div>
                         </div>
@@ -677,4 +681,4 @@ if (!defined('ABSPATH')) {
             </div>
         </header>
 
-        <main class="">
+        <main class="position-relative">
