@@ -67,13 +67,6 @@ if (! function_exists('wp_blog_bs5_assets')) {
             wp_enqueue_style($handle, $style_base . $file, ['wp-blog-bs5-bootstrap'], $theme_version);
         }
 
-        wp_enqueue_style(
-            'wp-blog-bs5-ionicons',
-            'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css',
-            ['wp-blog-bs5-bootstrap'],
-            '4.5.10-0'
-        );
-
         $additional_styles = [
             'wp-blog-bs5-main'       => 'main.css',
             'wp-blog-bs5-color'      => 'color.css',
