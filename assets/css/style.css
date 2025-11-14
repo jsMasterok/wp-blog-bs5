@@ -12,20 +12,20 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto&display=swap'); */
 
 /* Import third party CSS library */
-@import url(vendor/bootstrap.min.css);
-@import url(vendor/owl.carousel.min.css);
-@import url(vendor/ticker-style.css);
-@import url(vendor/material-icons.min.css);
-@import url(vendor/weather-icons.min.css);
-@import url(vendor/flaticon.css);
-@import url(vendor/slicknav.css);
-@import url(vendor/animate.min.css);
-@import url(vendor/magnific-popup.css);
-@import url(vendor/fontawesome-all.min.css);
-@import url(vendor/themify-icons.css);
-@import url(vendor/slick.css);
-@import url(vendor/nice-select.css);
-@import url(vendor/perfect-scrollbar.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/bootstrap.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/owl.carousel.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/ticker-style.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/material-icons.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/weather-icons.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/flaticon.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/slicknav.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/animate.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/magnific-popup.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/fontawesome-all.min.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/themify-icons.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/slick.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/nice-select.css);
+@import url(/wp-content/themes/d24ar/assets/css/vendor/perfect-scrollbar.css);
 
 /* GENERAL */
 body {
