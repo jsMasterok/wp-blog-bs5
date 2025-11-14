@@ -273,13 +273,17 @@
 
     //VSticker
     var VSticker = function() {
-        $('#datetime').vTicker({
-            speed: 1000,
-            pause: 3000,
-            animation: 'fade',
-            mousePause: false,
-            showItems: 1
-        });
+        var $ticker = $('#datetime');
+
+        if ($ticker.length && $.fn.vTicker) {
+            $ticker.vTicker({
+                speed: 1000,
+                pause: 3000,
+                animation: 'fade',
+                mousePause: false,
+                showItems: 1
+            });
+        }
     };
 
     //sidebar sticky
